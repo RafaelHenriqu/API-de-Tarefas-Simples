@@ -17,7 +17,7 @@ Ideal para praticar o básico de back-end, rotas HTTP (`GET` e `POST`) e integra
 1. Clone o repositório:
 
 ```bash
-git clone ****
+git clone https://github.com/RafaelHenriqu/API-de-Tarefas-Simples
 cd API-de-Tarefas-Simples
 
 ## Instale as dependências:
@@ -59,18 +59,26 @@ Adiciona uma nova tarefa.
 
 ````
 
-## 📄 GET /get
+#### 📄 GET /get
 Retorna todas as tarefas salvas no banco de dados.
+
+#### ✅ Marcar tarefa como feita
+`PATCH /done/id`
+
+#### ❌ Marcar tarefa como NÃO feita
+`PATCH /notdone/id`
+
+#### 🟢 Ver apenas tarefas feitas
+`GET /done`
+
+#### 🔴 Ver apenas tarefas não feitas
+`GET /notdone`
 
 
 # 🧠 Objetivo
 Esse projeto faz parte da minha jornada de aprendizado em back-end.
 Estou criando projetos do básico ao avançado para construir um portfólio sólido e entrar no mercado como desenvolvedor.
 
-# 📚 Próximos passos
-* Adicionar validação de dados
-
-* Adicionar filtros de busca e ordenação
 
 # 📌 Autor
 
