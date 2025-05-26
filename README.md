@@ -17,7 +17,7 @@ Ideal para praticar o básico de back-end, rotas HTTP (`GET` e `POST`) e integra
 1. Clone o repositório:
 
 ```bash
-git clone ****
+git clone https://github.com/RafaelHenriqu/API-de-Tarefas-Simples
 cd API-de-Tarefas-Simples
 
 ## Instale as dependências:
