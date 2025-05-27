@@ -9,7 +9,8 @@ const MySQL = require("mysql2").createConnection({
 })
 const App = Express()
 App.use(Express.json())
-
+App.use(require("cors")())
+App.use(Express.urlencoded({ extended: true }));
 App.post("/add",(req,res)=>{
    MySQL.query(`INSERT INTO tarefas (_Title,_Description,_Done) values (?,?,?)`,[req.body.Title,req.body.Desc,0])
    res.send("Dados Salvos.")
